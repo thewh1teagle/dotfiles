@@ -3,8 +3,8 @@ PROFILE_PATH=$MINGW_PREFIX/etc/profile.d
 mkdir -p $PROFILE_PATH
 
 # Rustup
-echo "export PATH=\$PATH:/\$MINGW_PREFIX/.cargo/bin" > $PROFILE_PATH/rust.sh
-echo "export PATH=\$PATH:/\$MINGW_PREFIX/.rustup/bin" >> $PROFILE_PATH/rust.sh
+echo "export PATH=\$PATH:\$MINGW_PREFIX/.cargo/bin" > $PROFILE_PATH/rust.sh
+echo "export PATH=\$PATH:\$MINGW_PREFIX/.rustup/bin" >> $PROFILE_PATH/rust.sh
 echo "export CARGO_HOME=\$MINGW_PREFIX/.cargo" >> $PROFILE_PATH/rust.sh
 echo "export RUSTUP_HOME=\$MINGW_PREFIX/.rustup" >> $PROFILE_PATH/rust.sh
 
