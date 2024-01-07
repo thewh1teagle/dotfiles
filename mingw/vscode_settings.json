@@ -1,0 +1,19 @@
+{
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:PATH}C:\\msys64\\ucrt64\\bin"
+    },
+
+    "terminal.integrated.defaultProfile.windows": "MSYS2 UCRT64",
+    "terminal.integrated.profiles.windows": {
+      "MSYS2 UCRT64": {
+        "path": "C:\\msys64\\msys2_shell.cmd",
+        "args": [
+          "-defterm",
+          "-here",
+          "-no-start",
+          "-use-full-path",
+          "-ucrt64"
+        ]
+      }
+    }  
+}
